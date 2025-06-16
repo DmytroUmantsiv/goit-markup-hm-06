@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,6 +53,77 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-menu-btn">
+          <svg class="header-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <div class="container mob-menu-container">
+          <button type="button" class="menu-close">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <nav class="mob-navigation">
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link current" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-address">
+            <ul class="mob-address-list">
+              <li class="mob-address-item">
+                <a class="mob-address-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-icons">
+              <li class="mob-icon-wrapper">
+                <a href="" class="mob-icon-link">
+                  <svg class="mob-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-icon-wrapper">
+                <a href="" class="mob-icon-link">
+                  <svg class="mob-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-icon-wrapper">
+                <a href="" class="mob-icon-link">
+                  <svg class="mob-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-icon-wrapper">
+                <a href="" class="mob-icon-link">
+                  <svg class="mob-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
     <main>
@@ -73,8 +145,8 @@
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="about-subtitle list-subtitle">Strategy</h3>
-              <p class="about-text">
+              <h3 class="about-subtitle section-title">Strategy</h3>
+              <p class="about-text list-subtitle">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -85,8 +157,8 @@
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="about-subtitle list-subtitle">Punctuality</h3>
-              <p class="about-text">
+              <h3 class="about-subtitle section-title">Punctuality</h3>
+              <p class="about-text list-subtitle">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -97,8 +169,8 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="about-subtitle list-subtitle">Diligence</h3>
-              <p class="about-text">
+              <h3 class="about-subtitle section-title">Diligence</h3>
+              <p class="about-text list-subtitle">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -109,8 +181,8 @@
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="about-subtitle list-subtitle">Technologies</h3>
-              <p class="about-text">
+              <h3 class="about-subtitle section-title">Technologies</h3>
+              <p class="about-text list-subtitle">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -125,7 +197,11 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/img1.jpg"
+                srcset="
+                  ./images/team/team-1-min.jpg    1x,
+                  ./images/team/team-1@2x-min.jpg 2x
+                "
+                src="./images/team/team-1-min.jpg"
                 width="264"
                 height="260"
                 alt="Product Designer"
@@ -168,7 +244,11 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/img2.jpg"
+                srcset="
+                  ./images/team/team-2-min.jpg    1x,
+                  ./images/team/team-2@2x-min.jpg 2x
+                "
+                src="./images/team/team-2-min.jpg"
                 width="264"
                 height="260"
                 alt="Frontend Developer"
@@ -211,7 +291,11 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/img3.jpg"
+                srcset="
+                  ./images/team/team-3-min.jpg    1x,
+                  ./images/team/team-3@2x-min.jpg 2x
+                "
+                src="./images/team/team-3-min.jpg"
                 width="264"
                 height="260"
                 alt="Marketing"
@@ -254,7 +338,11 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/img4.jpg"
+                srcset="
+                  ./images/team/team-4-min.jpg    1x,
+                  ./images/team/team-4@2x-min.jpg 2x
+                "
+                src="./images/team/team-4-min.jpg"
                 width="264"
                 height="260"
                 alt="UI Designer"
@@ -305,7 +393,11 @@
               <div class="portfolio-cover">
                 <img
                   class="portfolio-item-image"
-                  src="./images/img5.jpg"
+                  srcset="
+                    ./images/portfolio/img-5-min.jpg    1x,
+                    ./images/portfolio/img@2x-5-min.jpg 2x
+                  "
+                  src="./images/portfolio/img-5-min.jpg"
                   width="360"
                   height="300"
                   alt="Banking App"
@@ -327,7 +419,11 @@
               <div class="portfolio-cover">
                 <img
                   class="portfolio-item-image"
-                  src="./images/img6.jpg"
+                  srcset="
+                    ./images/portfolio/img-4-min.jpg    1x,
+                    ./images/portfolio/img@2x-4-min.jpg 2x
+                  "
+                  src="./images/portfolio/img-4-min.jpg"
                   width="360"
                   height="300"
                   alt="Cashless Payment"
@@ -349,7 +445,11 @@
               <div class="portfolio-cover">
                 <img
                   class="portfolio-item-image"
-                  src="./images/img7.jpg"
+                  srcset="
+                    ./images/portfolio/img-3-min.jpg    1x,
+                    ./images/portfolio/img@2x-3-min.jpg 2x
+                  "
+                  src="./images/portfolio/img-3-min.jpg"
                   width="360"
                   height="300"
                   alt="Meditation App"
@@ -371,7 +471,11 @@
               <div class="portfolio-cover">
                 <img
                   class="portfolio-item-image"
-                  src="./images/img8.jpg"
+                  srcset="
+                    ./images/portfolio/img-2-min.jpg    1x,
+                    ./images/portfolio/img@2x-2-min.jpg 2x
+                  "
+                  src="./images/portfolio/img-2-min.jpg"
                   width="360"
                   height="300"
                   alt="Taxi Service"
@@ -393,7 +497,11 @@
               <div class="portfolio-cover">
                 <img
                   class="portfolio-item-image"
-                  src="./images/img9.jpg"
+                  srcset="
+                    ./images/portfolio/img-1-min.jpg    1x,
+                    ./images/portfolio/img@2x-1-min.jpg 2x
+                  "
+                  src="./images/portfolio/img-1-min.jpg"
                   width="360"
                   height="300"
                   alt="Screen Illustrations"
@@ -415,6 +523,10 @@
               <div class="portfolio-cover">
                 <img
                   class="portfolio-item-image"
+                  srcset="
+                    ./images/portfolio/img-min.jpg    1x,
+                    ./images/portfolio/img@2x-min.jpg 2x
+                  "
                   src="./images/img10.jpg"
                   width="360"
                   height="300"
@@ -577,8 +689,13 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-policy">Privacy Policy</a>
+              <span class="privacy-wrapper"
+                >I accept the terms and conditions of the<a
+                  href=""
+                  class="privacy-policy"
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-btn">send</button>
