@@ -36,10 +36,25 @@
   }
 
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-tab-min.jpg);
     max-width: 768px;
     width: 100%;
     padding-top: 112px;
     padding-bottom: 112px;
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/hero-tab@2x-min.jpg);
+    }
   }
 
   .hero-title {
@@ -88,9 +103,6 @@
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .footer {
-  }
-
   .footer-wrapper {
     justify-content: unset;
     padding-left: 108px;
@@ -100,9 +112,6 @@
 
   .footer-logo {
     min-width: 264px;
-  }
-
-  .social-media {
   }
 
   .footer-input {
@@ -146,10 +155,25 @@
     gap: 40px;
   }
   .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero-desktop-min.jpg);
     max-width: 1440px;
     width: 100%;
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/hero-desktop@2x-min.jpg);
+    }
   }
 
   .hero-title {
