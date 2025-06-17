@@ -84,13 +84,12 @@
   }
 
   .about-text {
-    font-size: 16px;
-    line-height: 1.5;
     width: 356px;
   }
 
   .team-list {
     column-gap: 24px;
+    row-gap: 64px;
   }
 
   .portfolio-list {
@@ -111,7 +110,7 @@
   }
 
   .footer-logo {
-    min-width: 264px;
+    max-width: 264px;
   }
 
   .footer-input {
@@ -136,7 +135,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -154,6 +153,13 @@
     flex-wrap: nowrap;
     gap: 40px;
   }
+
+  .header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -200,7 +206,14 @@
     margin-bottom: 8px;
   }
 
+  .about-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   .about-text {
+    font-weight: 400;
     width: 100%;
   }
 
