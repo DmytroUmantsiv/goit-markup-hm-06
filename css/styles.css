@@ -301,7 +301,6 @@ img {
 .mob-icons {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: clamp(10px, 10vw, 40px);
 }
 
@@ -422,8 +421,8 @@ img {
 }
 
 .about-subtitle {
-  font-size: 20px;
-  line-height: 1.2;
+  /* font-size: 20px;
+  line-height: 1.2; */
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
@@ -615,7 +614,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 16px;
 }
 
